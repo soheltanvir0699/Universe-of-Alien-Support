@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Universe of Alien — FAQ & Support</title>
+  <meta name="description" content="Help, FAQ, and support for Universe of Alien iOS game." />
+  <style>
+    :root {
+      --bg: #070b16;
+      --card: #121a2e;
+      --text: #e8eefc;
+      --muted: #9aa8c7;
+      --accent: #5cc8ff;
+      --coin: #f5d76e;
+      --gem: #6ee7f5;
+      --line: rgba(255,255,255,0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #1a2750, var(--bg));
+      color: var(--text);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 8px; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 28px 0 10px;
+      color: var(--accent);
+    }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #071018;
+      background: var(--accent);
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-bottom: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px 6px;
+      border-bottom: 1px solid var(--line);
+      color: var(--text);
+    }
+    th { color: var(--muted); font-weight: 600; }
+    details {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin: 8px 0;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--text);
+    }
+    details p { margin: 10px 0 0; }
+    .foot {
+      margin-top: 36px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="tag">Support · FAQ</div>
+    <h1>Universe of Alien</h1>
+    <p>Explore planets, solve missions, hunt, build shelter, and manage coins &amp; gems. This page is the free support / FAQ link for App Store Connect (hosted on GitHub Pages — no private server).</p>
+
+    <div class="card">
+      <strong style="color:var(--text)">Quick links</strong>
+      <ul>
+        <li><a href="#play">How to play</a></li>
+        <li><a href="#currency">Coins &amp; gems</a></li>
+        <li><a href="#iap">In-app purchases</a></li>
+        <li><a href="#missions">Missions &amp; lives</a></li>
+        <li><a href="#support">Contact / support</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+      </ul>
+    </div>
+
+    <h2 id="play">How to play</h2>
+    <details open>
+      <summary>Basic controls</summary>
+      <p>Use <strong>Walk / Run / Stop</strong> on the bottom left and the <strong>LOOK</strong> pad on the bottom right to move the camera. Pinch to zoom. Hunt animals with the Hunt button when aimed.</p>
+    </details>
+    <details>
+      <summary>Missions</summary>
+      <p>Walk to red mission pins on the planet, tap <strong>Accept Mission</strong>, then solve the puzzle. Rewards are coins and gems. You can also open <strong>Missions</strong> from the left rail to see the map (view-only).</p>
+    </details>
+    <details>
+      <summary>Shelter &amp; Shop</summary>
+      <p>Build Shelter with 3 Wood + 2 Stone + 1 Hide. Buy missing materials in <strong>Shop</strong>. Planets / Shelter buttons are on the right side of the HUD.</p>
+    </details>
+    <details>
+      <summary>Travel</summary>
+      <p>Tap <strong>Planets</strong> to open Travel Planets and move between unlocked worlds.</p>
+    </details>
+
+    <h2 id="currency">Coins &amp; gems</h2>
+    <div class="card">
+      <p><strong style="color:var(--coin)">Coins</strong> — common currency for shop goods (wood, stone, hide, etc.). Shown with a yellow coin icon.</p>
+      <p><strong style="color:var(--gem)">Gems</strong> — rare currency. Earned slowly by exploring (few crystals per planet), rare hunt milestones (every 55 hunts → 1 gem), and puzzle rewards (1 gem). Used for mission lives, “see answer,” and buying coins.</p>
+    </div>
+
+    <h2 id="iap">In-app purchases (gem packs)</h2>
+    <p>Open <strong>Shop → Buy gems</strong>. These are <em>consumable</em> real-money packs:</p>
+    <div class="card">
+      <table>
+        <thead>
+          <tr><th>Pack</th><th>Gems</th><th>Price (USD)</th><th>Product ID</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>200 Gems</td>
+            <td>200</td>
+            <td>$0.99</td>
+            <td><code>com.olle.olle.Universeofalien.gems200</code></td>
+          </tr>
+          <tr>
+            <td>500 Gems</td>
+            <td>500</td>
+            <td>$1.99</td>
+            <td><code>com.olle.olle.Universeofalien.gems500</code></td>
+          </tr>
+          <tr>
+            <td>5000 Gems</td>
+            <td>5000</td>
+            <td>$4.99</td>
+            <td><code>com.olle.olle.Universeofalien.gems5000</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <strong style="color:var(--text)">Buy coins with gems (not an IAP)</strong>
+      <p>In Shop → Buy coins with gems. Rate: <strong>10 gems → 500 coins</strong> (50 coins per gem). Also 25→1250 and 50→2500. This spends gems you already own; it is not a separate App Store product.</p>
+    </div>
+
+    <h2 id="missions">Missions &amp; lives</h2>
+    <ul>
+      <li>You start with <strong>3 mission lives</strong>.</li>
+      <li>Wrong puzzle answers cost 1 life.</li>
+      <li>Lives refill passively: <strong>1 life every 30 minutes</strong>.</li>
+      <li>Buy a life in Shop for gems, or use gems to reveal the puzzle answer.</li>
+    </ul>
+
+    <h2 id="support">Contact / support</h2>
+    <div class="card">
+      <p>For help with purchases, bugs, or questions:</p>
+      <ul>
+        <li>Open a free support ticket: <a href="https://github.com/soheltanvir0699/Universe-of-Alien-Support-Support/issues/new">GitHub Issues</a></li>
+        <li>App: <strong>Universe of Alien</strong> (iOS)</li>
+        <li>Project: <a href="https://github.com/soheltanvir0699/Universe-of-Alien-Support">github.com/soheltanvir0699/Universe-of-Alien-Support</a></li>
+      </ul>
+      <p>For Apple billing / refunds: <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
+    </div>
+
+    <h2 id="privacy">Privacy (short)</h2>
+    <div class="card">
+      <p>Universe of Alien stores game progress on your device. In-app purchases are processed by Apple. We do not sell your personal data. Purchase receipts are handled by Apple StoreKit. Contact us via <a href="https://github.com/soheltanvir0699/Universe-of-Alien-Support-Support/issues/new">GitHub Issues</a> for privacy questions.</p>
+    </div>
+
+    <h2>App Store Review (for Apple)</h2>
+    <div class="card">
+      <p>To test gem packs: launch app → tap <strong>Shop</strong> (cart) → section <strong>Buy gems</strong> → purchase with Sandbox Apple ID. Gems credit immediately after a successful transaction.</p>
+    </div>
+
+    <p class="foot">
+      Free page hosted via GitHub Pages from the Universe-of-Alien repository.<br />
+      Last updated: July 2026
+    </p>
+  </main>
+</body>
+</html>
