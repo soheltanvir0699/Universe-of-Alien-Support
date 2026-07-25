@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy — Universe of Alien</title>
-  <meta name="description" content="Privacy Policy for the Universe of Alien iOS app, including Google AdMob advertising." />
+  <meta name="description" content="Privacy Policy for Universe of Alien, including Google AdMob advertising and App Tracking Transparency." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -71,6 +71,16 @@
     }
     p, li { color: var(--muted); font-size: 1.05rem; }
     ul { padding-left: 1.2rem; }
+    .callout {
+      margin: 12px 0 8px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(245, 215, 110, 0.35);
+      background: rgba(245, 215, 110, 0.08);
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+    .callout strong { color: var(--text); }
     .foot {
       margin-top: 28px;
       color: var(--muted);
@@ -93,14 +103,22 @@
       <h2>1. Summary</h2>
       <p>
         Gameplay progress is stored on your device. In-app purchases are handled by Apple.
-        The App also shows ads through <strong style="color:var(--text)">Google AdMob</strong>
-        (rewarded videos and interstitial ads). We do not sell your personal information.
+        The App shows ads through <strong style="color:var(--text)">Google AdMob</strong>
+        (rewarded videos and interstitial ads). With your permission, advertising partners may use
+        device identifiers for <strong style="color:var(--text)">tracking</strong> across other companies’
+        apps and websites to show more relevant ads. We do not sell your personal information.
+      </p>
+      <p class="callout">
+        <strong>App Store Privacy label alignment:</strong>
+        Data collected from this App (including Device ID / advertising identifiers) may be used for
+        <strong>tracking purposes</strong> and <strong>third-party advertising</strong> when you allow tracking.
       </p>
 
       <h2>2. Information we store on your device</h2>
       <ul>
         <li>Game progress (coins, gems, inventory, planet unlocks, missions, settings)</li>
         <li>Daily rewarded-ad usage counts (to enforce fair free-reward limits)</li>
+        <li>Free-spin / daily reward cooldown timestamps</li>
         <li>Optional Keychain / iCloud Keychain backup of save data so progress can restore after reinstall when signed into the same Apple ID</li>
       </ul>
       <p>This gameplay data stays under your Apple account / device control and is not uploaded to our own servers.</p>
@@ -117,15 +135,20 @@
         The App uses <strong style="color:var(--text)">Google Mobile Ads (AdMob)</strong> to show:
       </p>
       <ul>
-        <li>Rewarded video ads (for example free shop rewards or free level skips)</li>
+        <li>Rewarded video ads (for example free shop rewards, free spins, or level assists)</li>
         <li>Interstitial (full-screen) ads between some mission stages</li>
       </ul>
       <p>
-        Google and its partners may collect and process information to deliver, measure, and improve ads.
-        Depending on your device settings and consent choices, this may include device identifiers
-        (such as the Identifier for Advertisers / IDFA when available), IP address, approximate location
-        derived from IP, device/app information, ad interaction data, and similar technical data.
+        Google and its advertising partners may collect and process information to deliver, measure,
+        personalize, and improve ads. Depending on your device settings and consent choices, this may include:
       </p>
+      <ul>
+        <li><strong style="color:var(--text)">Device ID</strong> — Identifier for Advertisers (IDFA) when available, and similar identifiers</li>
+        <li><strong style="color:var(--text)">Advertising Data</strong> — ads shown, interactions, and related performance data</li>
+        <li>IP address and approximate location derived from IP</li>
+        <li>Device and app information (model, OS version, app version, language)</li>
+        <li>Product interaction / usage data related to ad delivery</li>
+      </ul>
       <p>
         We do not control Google’s full data practices. Please review:
       </p>
@@ -143,27 +166,52 @@
           <a href="https://support.google.com/admob/answer/6128543" rel="noopener noreferrer">support.google.com/admob</a>
         </li>
       </ul>
-      <p>
-        On iOS, the App may ask for permission to track activity across other companies’ apps and websites
-        (App Tracking Transparency). If you choose <strong style="color:var(--text)">Ask App Not to Track</strong>,
-        ads can still appear, but they are typically less personalized.
-      </p>
-      <p>We do not sell or share personal data with data brokers for money.</p>
+      <p>We do not sell personal data to data brokers for money.</p>
 
-      <h2>5. Analytics</h2>
+      <h2>5. Tracking (App Tracking Transparency)</h2>
+      <p>
+        On iOS 14.5 and later, the App may show Apple’s
+        <strong style="color:var(--text)">App Tracking Transparency</strong> prompt before accessing the IDFA.
+        The App’s tracking permission text explains that we use this to show better ads and keep the game free.
+      </p>
+      <p>
+        If you tap <strong style="color:var(--text)">Allow</strong>, Google AdMob and its partners may use your
+        device’s advertising identifier and related data to
+        <strong style="color:var(--text)">track activity across other companies’ apps and websites</strong>
+        for personalized advertising and measurement (Apple’s definition of “tracking”).
+      </p>
+      <p>
+        If you tap <strong style="color:var(--text)">Ask App Not to Track</strong>, or later disable tracking in
+        Settings, ads can still appear, but they are typically less personalized and the IDFA is not used for tracking.
+      </p>
+      <p>
+        You can change this later in
+        <strong style="color:var(--text)">iOS Settings → Privacy &amp; Security → Tracking</strong>.
+      </p>
+
+      <h2>6. Data used in App Store Privacy answers</h2>
+      <p>Consistent with our App Store Connect privacy nutrition labels, the following may apply:</p>
+      <ul>
+        <li><strong style="color:var(--text)">Device ID</strong> — used for third-party advertising; may be used for tracking when you allow ATT</li>
+        <li><strong style="color:var(--text)">Advertising Data</strong> — used for third-party advertising / analytics related to ads</li>
+        <li>Purchase History — processed by Apple; may be referenced only as needed for StoreKit entitlements on device</li>
+        <li>Gameplay progress — stored on device; not collected on our servers</li>
+      </ul>
+
+      <h2>7. Analytics</h2>
       <p>
         We do not use a separate third-party analytics product beyond what is required for ads and App Store distribution.
         AdMob may include measurement related to ad delivery and performance.
       </p>
 
-      <h2>6. Children</h2>
+      <h2>8. Children</h2>
       <p>
         The App is intended for a general audience. We do not knowingly collect personal information from children
         for our own databases. Advertising partners may process data as described in their policies.
         Parents who have concerns can contact us (below) and can also use iOS Screen Time / content restrictions.
       </p>
 
-      <h2>7. Data retention &amp; deletion</h2>
+      <h2>9. Data retention &amp; deletion</h2>
       <p>
         Progress remains until you delete the App or clear app data. Uninstalling removes local UserDefaults data;
         Keychain items may persist or sync via Apple iCloud Keychain depending on your device settings.
@@ -171,7 +219,7 @@
         Advertising identifiers and ad-related data retained by Google are governed by Google’s policies.
       </p>
 
-      <h2>8. Your choices</h2>
+      <h2>10. Your choices</h2>
       <ul>
         <li>Respond to the App Tracking Transparency prompt (Allow or Ask App Not to Track)</li>
         <li>Change tracking later in iOS Settings → Privacy &amp; Security → Tracking</li>
@@ -181,13 +229,13 @@
         <li>Control iCloud Keychain in iOS Settings if you prefer not to sync Keychain items</li>
       </ul>
 
-      <h2>9. Changes</h2>
+      <h2>11. Changes</h2>
       <p>
         We may update this Privacy Policy from time to time. The “Last updated” date at the top will change when we do.
         Continued use of the App after an update means you accept the revised policy.
       </p>
 
-      <h2>10. Contact</h2>
+      <h2>12. Contact</h2>
       <p>
         Questions about privacy or the App:<br />
         Support issues:
